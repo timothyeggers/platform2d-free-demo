@@ -1,0 +1,87 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://game/Debug.gd" type="Script" id=1]
+
+[node name="Debug" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Split" type="VBoxContainer" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 7.0
+margin_bottom = 75.0
+
+[node name="PanelContainer" type="PanelContainer" parent="Split"]
+margin_right = 113.0
+margin_bottom = 82.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Split/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 106.0
+margin_bottom = 75.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="Split/PanelContainer/VBoxContainer"]
+margin_right = 99.0
+margin_bottom = 14.0
+text = "Controller State"
+
+[node name="InputDirection" type="Label" parent="Split/PanelContainer/VBoxContainer"]
+margin_top = 18.0
+margin_right = 99.0
+margin_bottom = 32.0
+
+[node name="InputJump" type="Label" parent="Split/PanelContainer/VBoxContainer"]
+margin_top = 36.0
+margin_right = 99.0
+margin_bottom = 50.0
+
+[node name="InputConvert" type="Label" parent="Split/PanelContainer/VBoxContainer"]
+margin_top = 54.0
+margin_right = 99.0
+margin_bottom = 68.0
+
+[node name="State" type="PanelContainer" parent="Split"]
+margin_top = 86.0
+margin_right = 113.0
+margin_bottom = 168.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Split/State"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 106.0
+margin_bottom = 75.0
+
+[node name="Title" type="Label" parent="Split/State/VBoxContainer"]
+margin_right = 99.0
+margin_bottom = 14.0
+text = "Physics State"
+
+[node name="Velocity" type="Label" parent="Split/State/VBoxContainer"]
+margin_top = 18.0
+margin_right = 99.0
+margin_bottom = 32.0
+
+[node name="State" type="Label" parent="Split/State/VBoxContainer"]
+margin_top = 36.0
+margin_right = 99.0
+margin_bottom = 50.0
+
+[node name="Direction" type="Label" parent="Split/State/VBoxContainer"]
+margin_top = 54.0
+margin_right = 99.0
+margin_bottom = 68.0
